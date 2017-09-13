@@ -20,6 +20,20 @@
   .btn-toolbar & {
     margin-right: 0;
   }
+
+  &.disabled,
+  &.readonly,
+  &:disabled,
+  &[readonly] {
+    &,
+    &:focus,
+    &.focus,
+    &:active,
+    &.active,
+    &:hover {
+      cursor: not-allowed;
+    }
+  }
 }
 
 .btn--loading .btn__title {
